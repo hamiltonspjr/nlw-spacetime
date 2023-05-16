@@ -1,10 +1,14 @@
 import fastify from 'fastify'
+import { PrismaClient } from '@prisma/client'
 
 const app = fastify()
+// conexão com o banco de dados
+const prisma = new PrismaClient()
 
 // criando rotas
-app.get('/hello', () => {
-  return 'hello world'
+app.get('/hello', async () => {
+  const users = await prisma.user.findMany()
+  return users
 })
 
 app
