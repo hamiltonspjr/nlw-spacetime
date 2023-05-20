@@ -1,7 +1,7 @@
-import { Copyright } from './components/Copyright'
-import { EmptyMemories } from './components/EmptyMemories'
-import { Hero } from './components/Hero'
-import { Signin } from './components/Signin'
+import { Copyright } from '../components/Copyright'
+import { EmptyMemories } from '../components/EmptyMemories'
+import { Hero } from '../components/Hero'
+import { Signin } from '../components/Signin'
 
 export default function Home() {
   return (
